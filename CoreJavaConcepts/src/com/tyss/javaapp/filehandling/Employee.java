@@ -7,6 +7,7 @@ public class Employee implements Serializable{
 	//public Long serialVersionUID =  506318592107968629;
 	transient int id;
 	 String name;
+	 String email;
 	public Employee() {
 		super();
 	}
