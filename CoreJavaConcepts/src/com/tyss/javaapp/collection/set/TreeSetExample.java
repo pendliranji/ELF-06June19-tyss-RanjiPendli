@@ -5,6 +5,7 @@ import java.util.TreeSet;
 
 public class TreeSetExample {
 
+	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public static void main(String[] args) {
 		TreeSet hs = new TreeSet();
 		hs.add(1);
