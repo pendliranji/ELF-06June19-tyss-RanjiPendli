@@ -3,6 +3,7 @@ package com.tyss.javaapp.collection.set;
 import java.util.HashSet;
 import java.util.Iterator;
 
+@SuppressWarnings({ "rawtypes", "unchecked" })
 public class HashSetExample {
 
 	public static void main(String[] args) {

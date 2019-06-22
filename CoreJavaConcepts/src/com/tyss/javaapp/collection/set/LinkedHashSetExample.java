@@ -3,10 +3,11 @@ package com.tyss.javaapp.collection.set;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
 
+@SuppressWarnings({ "rawtypes", "unchecked" })
 public class LinkedHashSetExample {
 
 	public static void main(String[] args) {
-
+ 
 		LinkedHashSet hs=new LinkedHashSet();
 		hs.add(1);
 		hs.add("aa");

@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 import lombok.Data;
-@SuppressWarnings("unused")
+
 @Data
 public class EmployeeBean implements Serializable {
 	private Integer eid;
@@ -14,7 +14,5 @@ public class EmployeeBean implements Serializable {
 	private int eage;
 	private Date date;
 	private String gender;
-	
-	
 
 }
