@@ -3,7 +3,7 @@ package com.tyss.javaapp.array;
 public class StringExample {
 
 	public static void main(String[] args) {
-		Example e = s-> s.length();
+		Example e = s -> s.length();
 		StringExample s1 = new StringExample();
 		int len = e.returnStringLength("ranji");
 		System.out.println(len);
@@ -15,18 +15,18 @@ public class StringExample {
 		 */
 		System.out.println("----------------");
 		CharcterCount c = ll -> {
-			char[] ch=ll.toCharArray();
-			
+			char[] ch = ll.toCharArray();
+
 			return ch.length;
 		};
-		int count=c.getCharCount("ranjith");
-		System.out.println("char count :"+count);
+		int count = c.getCharCount("ranjith");
+		System.out.println("char count :" + count);
 		System.out.println("----------------");
 		System.out.println("----------------");
-		SquareDemo sq=mm-> (mm*mm);
-		
-		int square=sq.num(5);
-		System.out.println( "square :"+square);
+		SquareDemo sq = mm -> (mm * mm);
+
+		int square = sq.num(5);
+		System.out.println("square :" + square);
 
 	}
 

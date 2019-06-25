@@ -15,7 +15,6 @@ public class GenericArraList {
 		al.add(6.9);
 		al.add(2.4);
 		al.add(3.6);
-
 		System.out.println("Before-Sorting--" + al);
 		al.add(22.34);
 		al.add(al.size(),99.9);
