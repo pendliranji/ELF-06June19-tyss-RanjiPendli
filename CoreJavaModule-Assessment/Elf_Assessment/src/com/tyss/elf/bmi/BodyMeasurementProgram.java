@@ -4,7 +4,10 @@ import java.util.Scanner;
 import java.util.function.Consumer;
 
 import lombok.extern.java.Log;
+/*
+ * 18)	WAP to return the result of the BMI based on the BMI value, using lambda expression
 
+ */
 @Log
 public class BodyMeasurementProgram {
 

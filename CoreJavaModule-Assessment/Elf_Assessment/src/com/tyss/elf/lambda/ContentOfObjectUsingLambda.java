@@ -3,7 +3,11 @@ package com.tyss.elf.lambda;
 import java.util.function.Consumer;
 
 import lombok.extern.java.Log;
+/*
+ * WAP to display the content of object using lambda expression
 
+
+ * */
 @Log
 public class ContentOfObjectUsingLambda {
 
