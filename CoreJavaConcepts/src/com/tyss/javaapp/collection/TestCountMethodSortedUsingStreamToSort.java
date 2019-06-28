@@ -19,12 +19,13 @@ public class TestCountMethodSortedUsingStreamToSort {
 		System.out.println("ascending---" + s);
 		List<Integer> s1 = al.stream().sorted(comp).collect(Collectors.toList());// for sorting list objects for
 		System.out.println("descending---" + s1);
-		s1.forEach(sa->System.out.println(sa));
+		s1.forEach(sa -> System.out.println(sa));
 
 		Long count = al.stream().filter(i -> i % 3 == 0).count();// count no of rows affected
 		System.out.println("count :" + count);
 		List<Integer> list = al.stream().filter(i -> i % 3 == 0).collect(Collectors.toList());
 		System.out.println(list);
+
 	}
 
 }
