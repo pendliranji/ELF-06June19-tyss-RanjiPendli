@@ -38,7 +38,7 @@ public class StringMathOppMultiValueTest {
 	public static Collection<?> getpairs() {
 		Object[][] ob = { { "ranji", 5 }, { "pendli", 6 }, { "ram", 3 } };
 
-		ArrayList<Object> al = new ArrayList<>();//we can use Arrays.asList(ob) ,instead of creating arraylist obj
+		ArrayList<Object> al = new ArrayList<>();// we can use Arrays.asList(ob) ,instead of creating arraylist obj
 		for (int i = 0; i < ob.length; i++) {
 			al.add(ob[i]);
 		}
@@ -50,6 +50,7 @@ public class StringMathOppMultiValueTest {
 	public void testCounterCharString() {
 		int res = op.count(name);
 		assertEquals(value, res);
+		System.out.println("welcome to \"test yantra\" !!!");
 
 	}
 

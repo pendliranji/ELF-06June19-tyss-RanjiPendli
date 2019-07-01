@@ -4,7 +4,7 @@ public class Gun {
 	int bullets;
 
 	Gun(int i) {
-		bullets = i;
+		this.bullets = i;
 	}
 
 }

@@ -1,0 +1,11 @@
+Add jar to maven application by using cmd prompt with the following command
+go to your application place> mvn install:install-file -Dfile=C:\Users\Administrator\Documents\filecreationutil.jar -DgroupId=com.tyss -DartifactId=FileCreationUtilNew -Dversion=1.0 -Dpackaging=jar -DgeneratePom=true
+
+
+
+Dfile is your jar file location
+DgroupId is your application name present in jar(that means which you want to use in your application)
+DartifactId is your application name present in jar(that means which you want to use in your application)
+Dversion ---any version you want
+Dpackaging is jar(becoz we need jar file to add and it will generate)
+DgeneratePom=true means which the all things(groupid,artifactid,version given above are currently given in our current appln to  make use of jar file that generated )

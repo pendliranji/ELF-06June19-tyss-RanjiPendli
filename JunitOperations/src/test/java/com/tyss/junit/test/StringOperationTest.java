@@ -13,7 +13,6 @@ public class StringOperationTest {
 	@Test
 	public void test() {
 
-		String[] sa = { "ranji", "pendli", "ram", "manas" };
 		String s = "ranhl";
 		assertEquals(5, so.count(s));
 	}
