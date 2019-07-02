@@ -2,26 +2,20 @@ package com.tyss.jdbcapp;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
 
-/**
- * Jdbc Connection !
- *
- */
-public class App {
+public class PreparedEx2 {
 	public static void main(String[] args) {
-		String sql = "select * from employee_info"
-	+" where id=1";
-		System.out.println(sql);
-		// DriverManager.registerDriver(new Driver());
-		//Class.forName("com.mysql.jdbc.Driver");// OR we can use this
 
 		try (Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/tyss_db", "root", "root");) {
-			System.out.println(con.getClass());
-			Statement st = con.createStatement();
-			ResultSet result = st.executeQuery(sql);
+
+			
+			
+			PreparedStatement st = con.prepareStatement("select * from employee_info where id=? and mngr_id=?");
+			st.setInt(1, Integer.parseInt(args[0]));
+			st.setInt(2, Integer.parseInt(args[1]));
+			ResultSet result = st.executeQuery();
 			System.out.println("************** Employee Details *************");
 			while (result.next()) {
 				System.out.println("Id 			 :" + result.getInt(1));
@@ -41,9 +35,9 @@ public class App {
 
 			}
 
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
+		} catch (Exception e) {
 
+		}
 	}
+
 }
