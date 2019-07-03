@@ -10,8 +10,6 @@ public class PreparedEx2 {
 
 		try (Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/tyss_db", "root", "root");) {
 
-			
-			
 			PreparedStatement st = con.prepareStatement("select * from employee_info where id=? and mngr_id=?");
 			st.setInt(1, Integer.parseInt(args[0]));
 			st.setInt(2, Integer.parseInt(args[1]));
