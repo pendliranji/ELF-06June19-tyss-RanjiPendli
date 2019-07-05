@@ -114,6 +114,7 @@ Driver class is a jar implemented by specific Db-vendor ,which has the code for 
 
 33.What is DB URL?
 DBURL contains protocal : sub-protocal:sub-name , that means to identify a db present in unified(unique) location of a particular machine.
+jdbc:mysql://localhost:3306/dbname
 
 
 
