@@ -1,0 +1,132 @@
+[05/07/2019 5:39 PM] Ranjith Pendli:
+ 1.Write a QUERY TO display Employee NAME, his salary along WITH the designation FOR ALL the employee.
+SELECT NAME,SALARY,designnation FROM employee_info;
+
+2.Write a QUERY TO obtain NAME AND his current salary AND NEW salary WITH a hike 25 % FOR ALL the Employee.
+SELECT NAME n,SALARY  s FROM employee_info e WHERE 
+
+
+3.Write a QUERY TO display ALL the details of the Employee who are working AS salesman.
+SELECT  * FROM employee_info WHERE designnation LIKE 'salesman'
+
+4.Write a QUERY TO display ALL the employees of Dept.no 20.
+SELECT  * FROM employee_info WHERE Dept_no=20;
+
+5.Write a QUERY TO display ALL the Employees DOB BEFORE 1994.
+SELECT  * FROM employee_info WHERE DOB < (1994-12-06)
+
+6.Write a QUERY TO display ALL the employees whose annual salary IS LESS THAN 30,000.
+SELECT  * FROM employee_info WHERE salary > 30000
+
+7.Write a QUERY TO display NAME, salary AND Annual salary of ALL the clerks.
+SELECT NAME,salary FROM employee_info WHERE designnation='clerks'
+
+8.Write a QUERY TO display ALL the details of Employee Whoever Hired AFTER Feb of 2013.
+SELECT  * FROM employee_info WHERE JOINING_DATE < (2013-02-01)
+
+9.Write a QUERY TO display managers working IN deptno 20 only IF salary IS greater THAN 2500.
+SELECT  * FROM employee_info WHERE dept_id=20 AND salary > 2500
+
+10.Write a QUERY TO display ALL the employee excluding Analyst.
+SELECT  * FROM employee_info WHERE DESIGNNATION NOT LIKE 'analyst'
+
+11.Write a QUERY TO display ALL the employees excluding salesman who are working IN department 30.
+SELECT  * FROM employee_info WHERE DESIGNNATION NOT LIKE 'analyst' AND dept_id=30
+
+12.Write a QUERY TO display NAMES of ALL the employee who are working IN dept 30 AS manager OR ALL the NAMES of employee who are working AS a clerk AND salary LESS THAN 2000.
+SELECT  * FROM employee_info WHERE dept_id=30 AND mngr_id !=  NULL OR DESIGNNATION LIKE 'clerk' AND salary > 2000
+
+13.Write a QUERY TO display ALL the Employees IN dept 20 only IF their salary IS greater THAN 1000 AND LESS THAN 3500, including 1000 & 3500.
+SELECT  * FROM employee_info WHERE (salary > 1000 AND Salary < 35000 AND salary LIKE(3500) 
+
+14.Write a QUERY TO display ALL the details of Employees who are working AS clerk IN deptno 20,30 OR 40.
+SELECT  * FROM employee_info WHERE DESIGNNATION='clerk' AND dept_id IN(20,30 OR 40)
+
+15.Write a QUERY TO display the details of software developer, manager OR clerk who are working IN dept.  10 OR 20 AND salary IS greater THAN 1500.
+SELECT  * FROM employee_info WHERE DESIGNNATION LIKE('software developer', 'manager' OR 'clerk') AND dept_id IN(10 OR 20) AND salary > 1500
+
+16. WRITE a QUERY TO display ALL the details of Employees who are working IN department 10,20 excluding ALL the Salesman AND Analyst.
+SELECT  * FROM employee_info WHERE dept_id IN(10,20) AND  DESIGNNATION NOT IN('Salesman' AND 'Analyst')
+
+17. WRITE a QUERY TO display NAME, Salary FOR ALL the Employees who are working IN dept 10 OR 20 AND their annual salary BETWEEN 20,000 AND 40,000 including the limits.
+SELECT NAME ,salary  FROM employee_info WHERE dept_id IN(10 OR 20) AND salary BETWEEN 20000 AND 400000
+
+18.Write a QUERY TO display ALL the details of employees who were hire IN the MONTH of September working IN dept 20 OR 30.
+SELECT  * FROM employee_info WHERE joining_date IN(2018-09-01) AND dept_id IN (20 OR 30)
+
+19.Write a QUERY TO display their NAME AND DOJ of employee who works AS salesman OR clerk AND their NAMES has AT LEAST ONE S OR E.
+SELECT NAME AND joining_date FROM employee_info WHERE designnation = 'tester' OR 'clerk' AND NAME LIKE(%s% or %e%);
+
+20.Write a query to display Average salary and Highest salary of dept. 20.
+SELECT AVG(salary),MAX(salary) FROM employee_info WHERE dept_id IN (20);
+
+21.Write a query to display date of first and last Hired Employees.
+SELECT  NAME,Joining_date FROM emp_information 
+
+22.Write a query to display AVG Salary of Employees by excluding president and manager(job).
+SELECT AVG(salary) FROM employee_info WHERE designation NOT IN('president','manager');
+
+23.Write a query to display the total salary and average salary of each department
+SELECT SUM(salary) AND AVG(salary)  FROM  emp_information  GROUP BY dept_id
+
+
+24.Write a query to find the highest and least salary of an Employee in each job by excluding the employees whose name has ‘R’ as the last but one character.
+SELECT MAX(salary) AND MIN(salary)  FROM  emp_information WHERE NAME LIKE '%R' GROUP BY designation .
+
+
+26. Write a query to list the employee whose designation are same as Vikas    or Rahul.
+SELECT * FROM emp_information WHERE designnation LIKE 'Vikas' OR 'Rahul'
+
+
+27. Write a query to List the employee whose salary is equal to the average of max and minimum.
+ SELECT * FROM employee_info WHERE salary =AVG(MAX(salary)+MIN(salary));
+
+28. Write a query to display employee name, department name and the location of all employee.
+select name,dept_name,location from employee_info;
+
+29. Write a query to display all the details of employee whose name begins with the consonants.
+SELECT * FROM employee_info WHERE NAME NOT LIKE('%a' OR '%e' OR '%i' OR '%o' OR '%u');
+
+30. Create a Views from Employee_Info table .Views should have all  the record whose salary is greater than 10000.
+ CREATE
+    
+    VIEW `tyss_db`.`viewss` 
+    AS
+SELECT * FROM employee_info WHERE salary >10000;
+
+31.  Create a trigger which will work before deletion in employee_info table and create a duplicate copy of the record in another table employee_backup
+DELIMITER $$
+
+CREATE
+    /*[DEFINER = { user | CURRENT_USER }]*/
+    TRIGGER `tyss_db`.`trig1` BEFORE DELETE
+    ON `tyss_db`.`employee_info`
+    FOR EACH ROW BEGIN
+    INSERT INTO 'tyss_db'.'employee_backup' VALUE(SELECT * FROM `tyss_db`.`employee_info`);
+
+    END$$
+
+DELIMITER ;
+
+32.What is Driver Class?
+Driver class is a jar implemented by specific Db-vendor ,which has the code for connecting with database. 
+
+
+33.What is DB URL?
+DBURL contains protocal : sub-protocal:sub-name , that means to identify a db present in unified(unique) location of a particular machine.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
