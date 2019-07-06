@@ -22,7 +22,7 @@ public class App {
 			System.out.println("33333333-" + SessionFactoryUtil.getSesfact());
 
 			EmployeeInfoBean eb = new EmployeeInfoBean();
-			eb.setId(18);
+			eb.setId(1111);
 			eb.setDeptId(1);
 			eb.setMngrId(13);
 			eb.setAccountNumber(123456);
@@ -37,7 +37,7 @@ public class App {
 			eb.setName("ranjith pendli");
 
 			// ses.save(d);
-			ses.save(eb);
+			ses.saveOrUpdate(eb);
 			ts.commit();
 			/*
 			 * EmployeeInfoBean eib = ses.get(EmployeeInfoBean.class, 1);

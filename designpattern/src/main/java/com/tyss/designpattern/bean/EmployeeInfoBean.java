@@ -32,8 +32,8 @@ public class EmployeeInfoBean {
 	private Date dob;
 	@Column(name = "account_number")
 	private long accountNumber;
-
 	private int deptId;
 	@Column(name = "mngr_id")
 	private int mngrId;
+
 }

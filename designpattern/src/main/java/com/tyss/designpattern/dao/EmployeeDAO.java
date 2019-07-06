@@ -12,8 +12,12 @@ public interface EmployeeDAO {
 
 	List<EmployeeInfoBean> getAllEmployeeInfo();
 
-	/* int insertEmployee(EmployeeInfoBean bean); */
-	/* int updateEmployee(EmployeeInfoBean bean); */
-	/* void deleteEmployee(Integer id); */
+	boolean saveEmployeeInfo(EmployeeInfoBean bean);
+
+	boolean updateEmployeeInfo(EmployeeInfoBean bean);
+
+	boolean deleteEmployeeInfo(int id);
+
+	boolean deleteEmployeeInfo(String id);
 
 }
