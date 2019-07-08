@@ -1,4 +1,4 @@
-package com.tyss.designpattern;
+package com.tyss.designpattern.builder;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
