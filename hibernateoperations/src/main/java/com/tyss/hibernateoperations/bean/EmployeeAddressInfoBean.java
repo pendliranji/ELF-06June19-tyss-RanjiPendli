@@ -1,4 +1,4 @@
-package com.tyss.hibernateoperations.bean;
+		package com.tyss.hibernateoperations.bean;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
