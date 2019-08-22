@@ -1,0 +1,10 @@
+
+Aug 09, 2019 13:40:47.85 NEW SESSION
+Aug 09, 2019 13:40:47.89 [11740:7040:0809/134040.661:ERROR:checkin_request.cc(219)] Failed to get checkin response. Fetcher failed. Retrying.
+Aug 09, 2019 13:40:50.64 [11740:7040:0809/134050.648:ERROR:connection_factory_impl.cc(413)] Failed to connect to MCS endpoint with error -118
+Aug 09, 2019 13:41:13.15 [11740:7040:0809/134113.151:ERROR:checkin_request.cc(219)] Failed to get checkin response. Fetcher failed. Retrying.
+Aug 09, 2019 13:42:21.46 [11740:7040:0809/134221.469:ERROR:checkin_request.cc(219)] Failed to get checkin response. Fetcher failed. Retrying.
+Aug 09, 2019 13:44:03.11 [11740:7040:0809/134403.117:ERROR:checkin_request.cc(219)] Failed to get checkin response. Fetcher failed. Retrying.
+Aug 09, 2019 13:46:56.49 [11740:7040:0809/134656.499:ERROR:checkin_request.cc(219)] Failed to get checkin response. Fetcher failed. Retrying.
+Aug 09, 2019 13:53:12.96 [11740:7040:0809/135312.962:ERROR:checkin_request.cc(219)] Failed to get checkin response. Fetcher failed. Retrying.
+Aug 09, 2019 13:54:56.57 [11740:7040:0809/135456.570:ERROR:browser_process_sub_thread.cc(203)] Waited 175 ms for network service

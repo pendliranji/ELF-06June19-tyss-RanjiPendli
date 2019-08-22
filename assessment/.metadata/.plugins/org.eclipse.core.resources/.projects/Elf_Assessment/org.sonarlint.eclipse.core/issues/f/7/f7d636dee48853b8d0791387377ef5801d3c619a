@@ -1,0 +1,5 @@
+
+’squid:S1210""YOverride "equals(Object obj)" to comply with the contract of the "compareTo(T o)" method.(Ùãùÿÿÿÿ8¿Ïóí¹-HéRMINORZ
+CODE_SMELL
+lsquid:UselessImportCheck"+Remove this unused import 'java.util.Date'.(¸…¼ü8Í‡î¹-HêRMINORZ
+CODE_SMELL
